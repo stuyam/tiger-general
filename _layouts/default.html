@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    {% include nav.html %}
+    <h1>{{ page.title }}</h1>
+    <section>
+      {{ content }}
+    </section>
+    <!-- Contact Section -->
+    <section class="bg-gradient-to-r from-emerald-600 to-emerald-900 text-white py-16">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold mb-6">Contact Us</h2>
+        <p class="text-lg mb-8">Ready to transform your outdoor space? Reach out to us today!</p>
+        <a href="#" class="bg-white text-emerald-600 px-8 py-4 rounded-full font-semibold transition duration-300 hover:bg-emerald-500 hover:text-white">Get in Touch</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-emerald-800 text-white py-4">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2023 Landscaping Co. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
