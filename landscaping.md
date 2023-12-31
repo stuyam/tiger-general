@@ -1,5 +1,6 @@
 ---
 layout: default
+key: landscaping
 ---
 
 <div class="container mx-auto px-2">

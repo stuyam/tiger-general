@@ -1,12 +1,91 @@
-  <!-- Navigation -->
-  <nav class="bg-gradient-to-br from-emerald-700 to-emerald-900 p-4">
-    <div class="container mx-auto flex justify-between items-center">
-      <a href="/" class="text-white text-2xl font-semibold">Tiger General</a>
-      <ul class="flex space-x-4">
-        <li><a href="landscaping.html" class="text-white">Landscaping</a></li>
-        <li><a href="masonry.html" class="text-white">Masonry</a></li>
-        <li><a href="snow-removal.html" class="text-white">Snow Removal</a></li>
-        <li><a href="contact.html" class="text-white">Contact</a></li>
-      </ul>
+<!-- Navigation -->
+{% assign active_class = "border-emerald-500 text-gray-900" %}
+{% assign deactive_class = "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" %}
+{% assign mobile_active_class = "border-emerald-500 bg-emerald-50 text-emerald-700" %}
+{% assign mobile_deactive_class = " border-transparent text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700" %}
+{% if page.key == 'landscaping' %}
+{%   assign landscaping_class = active_class %}
+{%   assign mobile_landscaping_class = mobile_active_class %}
+{% else %}
+{%   assign landscaping_class = deactive_class %}
+{%   assign mobile_landscaping_class = mobile_deactive_class %}
+{% endif %}
+
+{% if page.key == 'masonry' %}
+{%   assign masonry_class = active_class %}
+{%   assign mobile_masonry_class = mobile_active_class %}
+{% else %}
+{%   assign masonry_class = deactive_class %}
+{%   assign mobile_masonry_class = mobile_deactive_class %}
+{% endif %}
+
+{% if page.key == 'snow-removal' %}
+{%   assign snow_removal_class = active_class %}
+{%   assign mobile_snow_removal_class = mobile_active_class %}
+{% else %}
+{%   assign snow_removal_class = deactive_class %}
+{%   assign mobile_snow_removal_class = mobile_deactive_class %}
+{% endif %}
+
+{% if page.key == 'contact' %}
+{%   assign contact_class = active_class %}
+{%   assign mobile_contact_class = mobile_active_class %}
+{% else %}
+{%   assign contact_class = deactive_class %}
+{%   assign mobile_contact_class = mobile_deactive_class %}
+{% endif %}
+
+<!-- Navigation -->
+<nav class="bg-white shadow">
+  <div class="mx-auto container px-4 sm:px-6 lg:px-8">
+    <div class="flex h-16 justify-between">
+      <div class="flex">
+        <div class="flex flex-shrink-0 items-center">
+          <a href="/" class="text-emerald-700 text-2xl font-semibold">Tiger General</a>
+        </div>
+        <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+          <!-- Current: "border-emerald-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -->
+          <a href="landscaping.html" class="inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium {{ landscaping_class }}">Landscaping</a>
+          <a href="masonry.html" class="inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium {{ masonry_class }}">Masonry</a>
+          <a href="snow-removal.html" class="inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium {{ snow_removal_class }}">Snow Removal</a>
+          <a href="contact.html" class="inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium {{ contact_class }}">Contact</a>
+        </div>
+      </div>
+
+      <div class="-mr-2 flex items-center sm:hidden">
+        <!-- Mobile menu button -->
+        <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-emerald-500" aria-controls="mobile-menu" aria-expanded="false">
+          <span class="absolute -inset-0.5"></span>
+          <span class="sr-only">Open main menu</span>
+          <!--
+            Icon when menu is closed.
+
+            Menu open: "hidden", Menu closed: "block"
+          -->
+          <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          <!--
+            Icon when menu is open.
+
+            Menu open: "block", Menu closed: "hidden"
+          -->
+          <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
     </div>
-  </nav>
+  </div>
+
+  <!-- Mobile menu, show/hide based on menu state. -->
+  <div class="sm:hidden" id="mobile-menu">
+    <div class="space-y-1 pb-3 pt-2">
+      <!-- Current: "bg-emerald-50 border-emerald-500 text-emerald-700", Default: "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700" -->
+      <a href="landscaping.html" class="block border-l-4 py-2 pl-3 pr-4 text-base font-medium {{ mobile_landscaping_class }}">Landscaping</a>
+      <a href="masonry.html" class="block border-l-4 py-2 pl-3 pr-4 text-base font-medium {{ mobile_masonry_class }}">Masonry</a>
+      <a href="snow-removal.html" class="block border-l-4 py-2 pl-3 pr-4 text-base font-medium {{ mobile_snow_removal_class }}">Snow Removal</a>
+      <a href="contact.html" class="block border-l-4 py-2 pl-3 pr-4 text-base font-medium {{ mobile_contact_class }}">Contact</a>
+    </div>
+  </div>
+</nav>

@@ -1,5 +1,6 @@
 ---
 layout: default
+key: contact
 ---
 
 <div class="max-w-xl mx-auto">
