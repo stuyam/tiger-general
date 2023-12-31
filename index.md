@@ -9,7 +9,7 @@ layout: default
 <header class="relative bg-cover bg-center bg-[url('assets/photos/landscaping/lawn-5.jpeg')] text-white h-80 md:h-[40rem] flex flex-col justify-center items-center px-10">
   <div class="absolute inset-0 bg-black/40"></div>
   <div class="relative">
-    <h1 class="text-5xl font-bold mb-4">Landscaping, Masonry, Snow Removal</h1>
+    <h1 class="text-3xl font-bold mb-4 md:text-5xl">Landscaping, Masonry, Snow Removal</h1>
     <p class="text-lg mb-8">Elevate, Transform, Defend: Your All-Season Partner for Landscaping, Masonry, and Snow Removal.</p>
     <a href="#services" class="bg-white text-green-600 px-6 py-3 rounded-full font-semibold transition duration-300 hover:bg-green-600 hover:text-white">Explore Services</a>
   </div>
