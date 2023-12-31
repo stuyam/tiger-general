@@ -5,7 +5,7 @@ key: landscaping
 
 <div class="container mx-auto px-2">
 
-  <div class="mx-auto my-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+  <div class="mx-auto my-8 max-w-2xl rounded-3xl ring-1 ring-gray-200 md:my-16 lg:mx-0 lg:flex lg:max-w-none">
     <div class="p-8 sm:p-10 lg:flex-auto">
       <h1 class="text-2xl font-bold tracking-tight text-gray-900">Landscaping & Lawn Care</h1>
       <p class="mt-6 text-base leading-7 text-gray-600">Transform your outdoor space with our comprehensive lawn care services, tailored to meet the unique needs of your lawn. From precision mowing and fertilization to weed control and seasonal cleanups, we ensure a lush, vibrant lawn that becomes the envy of the neighborhood.</p>

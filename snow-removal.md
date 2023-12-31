@@ -5,7 +5,7 @@ key: snow-removal
 
 <div class="container mx-auto px-2">
 
-  <div class="mx-auto my-16 max-w-2xl rounded-3xl ring-1 ring-gray-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
+  <div class="mx-auto my-8 max-w-2xl rounded-3xl ring-1 ring-gray-200 md:my-16 lg:mx-0 lg:flex lg:max-w-none">
     <div class="p-8 sm:p-10 lg:flex-auto">
       <h1 class="text-2xl font-bold tracking-tight text-gray-900">Snow Removal</h1>
       <p class="mt-6 text-base leading-7 text-gray-600">Ensure a clear path through winter's challenges with our top-notch snow removal services. From timely plowing to meticulous sidewalk clearing, we guarantee a safe and hassle-free environment, so you can navigate the snow with confidence.</p>
